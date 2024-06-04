@@ -34,14 +34,6 @@ cls
 echo 1
 timeout /t 1 /nobreak >nul
 cls
-set SOUND_FILE=%USERPROFILE%\Desktop\Sound.mp3
-
-if exist "%SOUND_FILE%" (
-    start wmplayer "%SOUND_FILE%"
-) else (
-    echo Die Sounddatei sound.mp3 wurde nicht auf dem Desktop gefunden.
-    pause
-)
 :loop
 start
 color 37
